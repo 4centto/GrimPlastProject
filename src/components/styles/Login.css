@@ -1,0 +1,251 @@
+.conthome{
+    width: 50%;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contRegistro{
+    width: 100%;
+    height: 100%;
+    transition: 1s ease 0s;
+}
+
+.contLogin{
+    width: 100%;
+    height: 100%;
+    transition: 1s ease 0s;
+}
+
+.contRegistro form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contLogin form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contRegistro form .inputRegistro{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 60px;
+    display: flex;
+}
+
+.contLogin form .inputRegistro{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 60px;
+    display: flex;
+}
+
+.contRegistro form .inputRegistro:nth-child(1){
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contLogin form .inputRegistro:nth-child(1){
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contRegistro form .inputRegistro:nth-child(2){
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contLogin form .inputRegistro:nth-child(2){
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contRegistro form .inputRegistro:nth-child(3){
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contLogin form .inputRegistro:nth-child(3){
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.contRegistro form .inputRegistro:nth-child(4){
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contRegistro form .inputRegistro p{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.contLogin form .inputRegistro p{
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.contRegistro form .inputRegistro input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.contLogin form .inputRegistro input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.contRegistro form .inputRegistro button{
+    width: 40%;
+    height: 80%;
+    background: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contLogin form .inputRegistro button{
+    width: 40%;
+    height: 80%;
+    background: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contRegistro form .inputRegistro button:nth-child(2){
+    background-color: rgb(20, 0, 107);
+    color: white;
+}
+
+.contRegistro form .inputRegistro button:nth-child(2):hover{
+    background-color: rgb(34, 0, 187);
+}
+
+.contRegistro form .inputRegistro button:nth-child(1):hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.contRegistro form .inputRegistro input:focus {
+    box-shadow: 0 0 2px black;
+    border-color: rgb(20, 0, 110);
+}
+
+.contLogin form .inputRegistro button:nth-child(2){
+    background-color: rgb(20, 0, 107);
+    color: white;
+}
+
+.contLogin form .inputRegistro button:nth-child(2):hover{
+    background-color: rgb(34, 0, 187);
+}
+
+.contLogin form .inputRegistro button:nth-child(1):hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.contLogin form .inputRegistro input:focus {
+    box-shadow: 0 0 2px black;
+    border-color: rgb(20, 0, 110);
+}
+
+@media screen and ( max-width: 1152px ){
+    .conthome{
+        width: 90%;
+    }
+}
+
+@media screen and ( max-width: 700px ){
+    .contRegistro form .inputRegistro:nth-child(4){
+        flex-direction: column-reverse;
+        height: 120px;
+    }
+    .contRegistro form .inputRegistro:nth-child(4) button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+
+@media screen and ( max-width: 730px ){
+    .contLogin form .inputRegistro:nth-child(3){
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+    }
+    .contLogin form .inputRegistro:nth-child(3) button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .contLogin form .inputRegistro{
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 350px ){
+    .contRegistro form .inputRegistro{
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width: 250px ){
+    .contLogin form .inputRegistro:nth-child(3) button{
+        font-size: 15px;
+    }
+    .contRegistro form .inputRegistro:nth-child(4) button{
+        font-size: 15px;
+    }
+}

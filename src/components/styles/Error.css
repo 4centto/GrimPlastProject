@@ -1,0 +1,16 @@
+.contError{
+    background: linear-gradient(to left, rgb(78, 0, 0), rgb(40, 0, 0));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    z-index: 1000;
+}
+
+.contError p{
+    color: white;
+    font-size: 20px;
+}

@@ -1,0 +1,183 @@
+.contFormulario{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    width: 100%;
+}
+
+.inputs{
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.inputs:nth-child(2){
+    justify-content: center;
+}
+
+.inputs:nth-child(3){
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inputs:nth-child(4){
+    margin-top: -15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.inputs select{
+    width: 200px;
+    height: 90%;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(0, 1, 73);
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.inputs select:focus{
+    box-shadow: 0 0 5px black;
+}
+
+.inputs:nth-child(2) input{
+    width: 30%;
+    height: 80%;
+    text-align: center;
+    outline: none;
+    background: none;
+    border: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.inputs:nth-child(2) input:focus{
+    border-color: #1200b6;
+    transform: scale(1.1);
+    box-shadow: 0 0 2px black;
+}
+
+.inputs:nth-child(3) input{
+    width: 45%;
+    height: 80%;
+    border: none;
+    background-color: rgb(12, 0, 65);
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.inputs:nth-child(3) input:hover{
+    background-color: rgb(0, 39, 122);
+}
+
+.inputs:nth-child(4) input{
+    width: 45%;
+    height: 80%;
+    border: 2px solid red;
+    background: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contLista{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.lista{
+    background-color: rgb(194, 195, 255);
+    width: 70%;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: scroll;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+
+.lista::-webkit-scrollbar{
+    display: none;
+}
+
+.lista table{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.lista table tr{
+    height: 50px;
+}
+
+.lista table tr{
+    background-color: rgba(0, 3, 175, 0.192);
+}
+
+.lista table tr:nth-child(1){
+    font-weight: bold;
+    background-color: rgba(1, 0, 77, 0.192);
+}
+
+@media screen and (max-width: 900px) {
+    .contFormulario{
+        flex-direction: column-reverse;
+    }
+    .formulario{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .inputs:nth-child(1){
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .lista{
+        width: 100%;
+    }
+    .lista table{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .inputs:nth-child(2) input{
+        width: 80%;
+        
+    }
+    .inputs:nth-child(3) input{
+        width: 90%;
+    }
+    .inputs:nth-child(4) input{
+        width: 90%;
+    }
+}

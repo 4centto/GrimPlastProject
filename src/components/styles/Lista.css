@@ -1,0 +1,133 @@
+.contListaProductos{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+}
+
+.tablaProductos{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    overflow: scroll;
+}
+
+.tablaProductos::-webkit-scrollbar{
+    display: none;
+}
+
+.tablaProductos table {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(194, 195, 255);
+    border-radius: 20px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.contListaProductos table tr{
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    background-color: rgba(0, 12, 175, 0.192);
+}
+
+.contListaProductos table tr:nth-child(1){
+    font-weight: bold;
+    background-color: rgba(6, 0, 92, 0.192);
+}
+
+.contTotal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contComentarios{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contComentarios p{
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contComentarios input{
+    width: 100%;
+    height: 40px;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.contComentarios input:focus{
+    border-color: #1c3979;
+    box-shadow: 0 0 5px #1c3979;
+}
+
+.contEnviar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.contEnviar button{
+    width: 50%;
+    height: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #150b38;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.contEnviar button:hover{
+    background-color: #1c3979;
+    box-shadow: 0 0 6px rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 400px) {
+    .tablaProductos table{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .contEnviar button{
+        width: 90%;
+    }
+}

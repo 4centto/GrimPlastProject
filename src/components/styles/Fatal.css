@@ -1,0 +1,22 @@
+.contFatal{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contFatal img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contFatal p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
